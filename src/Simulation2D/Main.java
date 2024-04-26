@@ -23,7 +23,7 @@ public class Main {
                          userInput = simulationControl(userInput);
                         if (userInput == PAUSE_SIMULATION)
                             break;
-                        System.out.println(" 1 - Пауза симуляции");
+                        System.out.println(" 4 - Пауза симуляции");
                         simulation.nextTurn();
                     }
                     break;
@@ -43,7 +43,7 @@ public class Main {
             Thread.sleep(1000);
             if (System.in.available() > 0) {
                 if (scanner.nextInt() == PAUSE_SIMULATION) {
-                    System.out.println("4 - Продолжить симуляцию");
+                    System.out.println("1 - Продолжить симуляцию");
                     return PAUSE_SIMULATION;
 
                 }
